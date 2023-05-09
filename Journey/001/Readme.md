@@ -1,5 +1,6 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
+<p align="center">
+  <img src="banner.png">
+</p>
 
 # New post title here
 
@@ -27,7 +28,9 @@ Some limitation from Vnet Peering includes:
 * Address spaces cannot overlap
 * Does not support transitive routing by default. 
 
+<p align="center">
 <img src="Problem02.png">
+</p>
 
 The above image describe a network traffic between three vnet. In Azure, peer-to-peer transitive routing describe network traffic between two virtual network that are routed through an intermediate virtual network with a router. 
 
@@ -37,20 +40,28 @@ The above image describe three simple virtual network.
 
 However, Vnet 1 is unable to talk to Vnet 3 as they are not connected and have to go through Vnet 2 which describes transitive routing. 
 
+<p align="center">
 <img src="Problem01.png">
+</p>
 
 The most common networking architecture is a "hub and spoke" topology. This contains a central "hub" connected to an on-premises network via ExpressRoute circuit. Additional "spoke" vnet that support specific workloads are connected to 5the hub. 
 
 The diagram above have a problem which does not support communication between the "spoke". An organisation might want to host an application server in a "Spoke1" virtual network and a central database server in a "Spoke2" virtual network. 
 
 #### Solution 1: 
+<p align="center">
 <img src="Solution01.png">
+</p>
+
 A quick solution would be to create a vnet peering between the two "Spoke". 
 
 However, this might be an issue as you may run out of peering connection due to the limitation of number of virtual networking peerings per virtual network. 
 
 #### Solution 2: 
+<p align="center">
 <img src="Solution01-2.png">
+</p>
+
 Another solution would be using UDR or a User-Define Route to force "Spoke" to be sent to Azure Firewall or a Network Virtaul Appliance (NVA) acting as a router at the hub. This will allow spokes to connect to each other. 
 
 Note: Address spaces of the vnet must be different or else Vnet Peering is not possible. 
@@ -63,8 +74,9 @@ You can also use VPN Gateway to establish connectivity within Vnets
 * Utilise IPSec site-to-site VPN tunnel that encrypts all connectivity going through the gateway
 This ensures that the data is still secure even if someone has manage to penetrate the VPN tunnel. 
 
+<p align="center">
 <img src="Solution02.png">
-
+</p>
 
 ## Prerequisite
 
