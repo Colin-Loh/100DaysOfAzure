@@ -21,7 +21,7 @@ By the end of this challenge, I hope to gain a deep understanding of the various
 - [ ] ☁️ 9 > [](Journey/009/Readme.md)
 - [ ] ☁️ 10 > [](Journey/010/Readme.md)
 
-## Walking down the road
+## Azure SQL Database
 
 - [ ] ☁️ 11 > [](Journey/011/Readme.md)
 - [ ] ☁️ 12 > [](Journey/012/Readme.md)
@@ -112,9 +112,9 @@ By the end of this challenge, I hope to gain a deep understanding of the various
 - [ ] ☁️ 79 > [](Journey/079/Readme.md)
 - [ ] ☁️ 80 > [](Journey/080/Readme.md)
 
-## Up into the mountains
+## Azure Landing Zone (ALZ) 
 
-- [ ] ☁️ 81 > [](Journey/081/Readme.md)
+- [ ] ☁️ 81 > [What is ALZ?](Journey/081/Readme.md)
 - [ ] ☁️ 82 > [](Journey/082/Readme.md)
 - [ ] ☁️ 83 > [](Journey/083/Readme.md)
 - [ ] ☁️ 84 > [](Journey/084/Readme.md)
@@ -125,9 +125,8 @@ By the end of this challenge, I hope to gain a deep understanding of the various
 - [ ] ☁️ 89 > [](Journey/089/Readme.md)
 - [ ] ☁️ 90 > [](Journey/090/Readme.md)
 
-## Into the sky to touch the cloud!
-
-- [ ] ☁️ 91 > [](Journey/091/Readme.md)
+## Azure Virtual Desktop (AVD) 
+- [ ] ☁️ 91 > [What is AVD?](Journey/091/Readme.md)
 - [ ] ☁️ 92 > [](Journey/092/Readme.md)
 - [ ] ☁️ 93 > [](Journey/093/Readme.md)
 - [ ] ☁️ 94 > [](Journey/094/Readme.md)

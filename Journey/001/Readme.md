@@ -44,13 +44,13 @@ However, Vnet 1 is unable to talk to Vnet 3 as they are not connected and have t
 <img src="Problem01.png">
 </p>
 
-The most common networking architecture is a "hub and spoke" topology. This contains a central "hub" connected to an on-premises network via ExpressRoute circuit. Additional "spoke" vnet that support specific workloads are connected to 5the hub. 
+The most common networking architecture is a "hub and spoke" topology. This contains a central "hub" connected to an on-premises network via ExpressRoute circuit. Additional "spoke" vnet that support specific workloads are connected to the hub. 
 
 The diagram above have a problem which does not support communication between the "spoke". An organisation might want to host an application server in a "Spoke1" virtual network and a central database server in a "Spoke2" virtual network. 
 
 #### Solution 1: 
 <p align="center">
-<img src="Solution01.png">
+<img src="Solution01-2.png">
 </p>
 
 A quick solution would be to create a vnet peering between the two "Spoke". 
@@ -59,10 +59,10 @@ However, this might be an issue as you may run out of peering connection due to 
 
 #### Solution 2: 
 <p align="center">
-<img src="Solution01-2.png">
+<img src="Solution01.png">
 </p>
 
-Another solution would be using UDR or a User-Define Route to force "Spoke" to be sent to Azure Firewall or a Network Virtaul Appliance (NVA) acting as a router at the hub. This will allow spokes to connect to each other. 
+Another solution would be using UDR or a User-Define Route to force "Spoke" to be sent to Azure Firewall or a Network Virtual Appliance (NVA) acting as a router at the hub. This will allow spokes to connect to each other. 
 
 Note: Address spaces of the vnet must be different or else Vnet Peering is not possible. 
 
@@ -71,7 +71,8 @@ You can also use VPN Gateway to establish connectivity within Vnets
 
 * VPN Gateway is made up of a special subnet called GatewaySubnet inside each Vnet
 * It uses a public IP address for each VPN gateway to establish connectivity versus VPN Peer that uses private IP
-* Utilise IPSec site-to-site VPN tunnel that encrypts all connectivity going through the gateway
+* Utilise IPSec site-to-site VPN tunnel that encrypts all connectivity going through the gateway.
+
 This ensures that the data is still secure even if someone has manage to penetrate the VPN tunnel. 
 
 <p align="center">

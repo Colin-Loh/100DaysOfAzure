@@ -1,11 +1,15 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Azure Virtual Desktop (AVD)
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+As I am going to be building AVD for my job, I thought this might be a good opportunity to document and implement AVD infrastrucutre environment end-to-end. 
+
+The aim is to be able to build the following:
+* Azure Active Directory Tenant with Azure AD Connect to an Active Directory Domain Controller
+* Deploy Azure Infrastrucutre for AVD Tenants, Host Pool, Session Host
+* Connect to an AVD Session 
+* Configure User Profiles and FSLogic with Azure File Shares
+* Monitoring and configure security for AVD Infrastructure and understand the step to manage gold images.
 
 ## Prerequisite
 
