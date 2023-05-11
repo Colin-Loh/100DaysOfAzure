@@ -50,35 +50,68 @@ Other additional things that will be deployed are the following:
 
 ## Cloud Research
 
-- ✍️ Document your trial and errors. Share what you tried to learn and understand about the cloud topic or while completing micro-project.
-- 🖼️ Show as many screenshot as possible so others can experience in your cloud research.
+<p align="center">
+<img src="Example02.png">
+</p>
+
+### Deploy Management Groups
+There should be a default management group resource hierarchy including additional Management Groups for demonstrating custom 
+
+Subscription is a container of resources that contain the follow:
+* Azure Policy
+* Role Based Access Control
+* Budget - Billing mecahnism within organization
+
+Some enterprise may have alot more subscriptions, we do not want to apply *policies* and *rbac* and *budgets* to all of those subscription individually.
+
+Solution?
+*Management Group*
+
+Under a management group we can have different business units / production and apply all policies, rbac and budgets and get *inherited* down to the subscriptions below.
+
+### Why use infrastructure as code? 
+We can definitely do ClickOps and deploy resources, management group, subscriptions, policies and etc.. via the Azure Portal. However, this would not be the best way. 
+Why?
+* You are not creating in a consistent manner
+* Not repeatable and unable to track for drift
+
+Solution? 
+*Infrastrucure as Code* 
+
+* Readable code
+* *DECLARATIVE* - it tells Azure Portal what we want to be there 
+* *IDEMPOTENT* - rerun the code anytime we want, it will modify or create the resource that we expect to be there
+
+### Key resources in any Azure Landing Zone
+* Log Analytics Workspace
+* Azure Security Center 
+* Virtual Network in each subscription - Spoke
+* Virtual WAN (Router) or Express Route Gateway / Site - Site VPN to governance overall set of networking for the company - HUB
+* Azure Key Vault in each subscription 
+
+### Azure Blueprint
+
+Azure Blueprint provides a declarative way to define and manage collections of Azure resources, including policies, role assignments, resource groups, and Azure Resource Manager templates. 
+This allows organizations to create consistent and repeatable environments that meet their compliance and security requirements.
+
+The blueprint can be assigned to any subscription that stamp down that configuration to the particular subscription. 
+* Assignment of the blueprint - lock (you can lock - prevent additional subnet to deploy (example) / delete - prevent delete of resources )
+
+Alternatively we can use terraform modules if your organization has multi-cloud configuration or has a preference.
+ 
+### Azure AD Instance 
+* Users 
+* Service Principles
+* Guests 
+
+We can add all of these into groups (identity object) 
+
 
 ## Try yourself
 
-✍️ Add a mini tutorial to encourage the reader to get started learning something new about the cloud.
+Create a blueprint 
+* Create a resource group for Shared Services
+* Deploy keyvault
+* Deploy log analytics
 
-### Step 1 — Summary of Step
 
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 1 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-### Step 3 — Summary of Step
-
-![Screenshot](https://via.placeholder.com/500x300)
-
-## ☁️ Cloud Outcome
-
-✍️ (Result) Describe your personal outcome, and lessons learned.
-
-## Next Steps
-
-✍️ Describe what you think you think you want to do next.
-
-## Social Proof
-
-✍️ Show that you shared your process on Twitter or LinkedIn
-
-[link](link)
