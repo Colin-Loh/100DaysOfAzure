@@ -5,7 +5,18 @@
 
 ## Introduction
 
-Azure Policy.
+Azure Policy:
+* Policy Definition
+* Policy Definition Set 
+* Policy Assignment
+* Policy Exemptions 
+
+Initiative Definition:
+Contain policies that are either custom or builtin internally to Auzre Portal already.
+Parameters: paramter object that align to the paramter required either by builtin policies or custom policies
+Effect: effect of the policy such as deny
+
+Custom policy Definiton is written from scratch using JSON. 
 
 ## Prerequisite
 

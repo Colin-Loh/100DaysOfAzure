@@ -64,6 +64,8 @@ However, this might be an issue as you may run out of peering connection due to 
 
 Another solution would be using UDR or a User-Define Route to force "Spoke" to be sent to Azure Firewall or a Network Virtual Appliance (NVA) acting as a router at the hub. This will allow spokes to connect to each other. 
 
+A real-life example would be to use a Virtual WAN (Router) or Express Route Gateway / Site - Site VPN to governance overall set of networking for the company in a subscription - HUB
+
 Note: Address spaces of the vnet must be different or else Vnet Peering is not possible. 
 
 #### Solution 3: VPN Gateway

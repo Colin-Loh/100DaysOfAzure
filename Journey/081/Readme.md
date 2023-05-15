@@ -79,8 +79,8 @@ Solution?
 *Infrastrucure as Code* 
 
 * Readable code
-* *DECLARATIVE* - it tells Azure Portal what we want to be there 
-* *IDEMPOTENT* - rerun the code anytime we want, it will modify or create the resource that we expect to be there
+* *DECLARATIVE* - It tells Azure Portal what we want to be there 
+* *IDEMPOTENT* - Rerun the code anytime we want, it will modify or create the resource that we expect to be there
 
 ### Key resources in any Azure Landing Zone
 * Log Analytics Workspace
