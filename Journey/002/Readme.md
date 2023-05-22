@@ -1,6 +1,3 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
 # Web app Private Connectivity to Azure SQL Database
 
 ## Introduction
@@ -10,8 +7,8 @@ We have touched on Azure Vnet, Vnet Peering and VPN Gateway. I thought it should
 I will try to summarise and pick out some information that I think is important to create this. You can find the documentation more here [link](https://learn.microsoft.com/en-us/azure/virtual-network/quick-create-portal)
 
 The aim of this exercise is the following:
-* Deploy all resources using Terraform as my preferred IaC tool.
-* 
+* Deploy all resources using Terraform as my preferred IaC tool. If you are following my 100 Days of Azure, feel free to use BICEP or ARM Templates instead. 
+* Understanding Azure App Service & Virtual Network Integration
 
 ## Prerequisite
 
