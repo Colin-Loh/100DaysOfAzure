@@ -1,10 +1,10 @@
-### App Service Plan 
+# Web app Private Connectivity to Azure SQL Database
 
+### App Service Plan 
 
 Imagine a multi-tenant infrastructure that has front-end / data roles / file services. Unique per customer, each ASP have a number of workers. These are the things that can auto scale / number of worker such as the VM sizes (sku). A Web App in ASP will be running on these ASP workers.
 
 ### Virtual Network
-
 
 A virtual network allows you to define and control network configuration such as subnet. 
 ----

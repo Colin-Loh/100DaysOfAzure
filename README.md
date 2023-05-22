@@ -11,8 +11,8 @@ By the end of this challenge, I hope to gain a deep understanding of the various
 ## Azure Networking
 
 - [ ] ☁️ 1 > [Azure VPN Gateway and VNet Peering](Journey/001/Readme.md)
-- [ ] ☁️ 2 > [](Journey/002/Readme.md)
-- [ ] ☁️ 3 > [](Journey/003/Readme.md)
+- [ ] ☁️ 2 > [Web app Private Connectivity to Azure SQL Database](Journey/002/Readme.md)
+- [ ] ☁️ 3 > [Understanding App Service Plan and Virtual Network Integration](Journey/003/Readme.md)
 - [ ] ☁️ 4 > [](Journey/004/Readme.md)
 - [ ] ☁️ 5 > [](Journey/005/Readme.md)
 - [ ] ☁️ 6 > [](Journey/006/Readme.md)
