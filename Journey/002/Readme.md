@@ -1,4 +1,4 @@
-# Understanding App Service Plan and Virtual Network Integration
+# Web app Private Connectivity to Azure SQL Database
 
 ## Introduction
 

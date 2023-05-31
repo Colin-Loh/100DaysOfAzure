@@ -99,9 +99,9 @@ By the end of this challenge, I hope to gain a deep understanding of the various
 - [ ] ☁️ 69 > [](Journey/069/Readme.md)
 - [ ] ☁️ 70 > [](Journey/070/Readme.md)
 
-## Resting at the Lagoon
+## Terraform
 
-- [ ] ☁️ 71 > [](Journey/071/Readme.md)
+- [ ] ☁️ 71 > [What is a Terraform Module?](Journey/071/Readme.md)
 - [ ] ☁️ 72 > [](Journey/072/Readme.md)
 - [ ] ☁️ 73 > [](Journey/073/Readme.md)
 - [ ] ☁️ 74 > [](Journey/074/Readme.md)
