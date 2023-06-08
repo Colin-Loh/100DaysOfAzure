@@ -84,7 +84,7 @@ Everything that can live in a virtual network and in a private IP space.
 
 We would need to set those peering up ourselves by establishing an **Express Route Circuit.** We have a Service Key which has a one-to-one mapping between the service key → the circuit.
 
-### Microsoft Peering - Setting It Up
+## Microsoft Peering - Setting It Up
 To offer services through our Express Route circuit: We need a / 29 or 2 x /30s that we own.  
   
 A /30s is 4 IPs but only 2 of them are usable to due the 1st being a Network and 4th being a Broadcast. We need 2 x /30s because we have 2 active-active paths.  
@@ -100,7 +100,7 @@ We need to give the following:
 - BGP Peering
 - Prefixes that we want to advertise via the connection - depends on how many NAT device
 
-### Private Peering - Setting It Up
+## Private Peering - Setting It Up
 
 Dealing with private IP space, we need to do exactly the same thing as Microsoft peering.  
 We need to have **2 x /30s in Private IP space.**  
@@ -109,7 +109,7 @@ We provide the 2 IP scope and our ASN to establish connectivity of our Vnet to o
   
 10x Authorization key = 10x Virtual Network.  
 
-### Hub and Spoke
+## Hub and Spoke
 
 We can also establish a Spoke and Hub method:  
 - Hub which has connectivity to the Express Route Circuit  
@@ -117,17 +117,16 @@ We can also establish a Spoke and Hub method:
 
 Outbound flow, it can actually bypass and go out other IP addresses. The inbound goes through the gateway and the outbound doesn’t go through the gateway. 
 
-### Route Filter 
+## Route Filter 
 
 We can create a route filter. A route filter allow us to tick which services that can go through our express route circuit. This includes filtering services from specific regions to control which route can have access to the internet.
 
 Control services what we can see over our express route. When we create an express route circuit we are creating in a subscription specifically for billing purposes. note: that Express Route Circuit in not limited to that subscription. 
 
-### Express Route - Fast Path
+## Express Route - Fast Path
 
 This allows us to bypass the gateway for the traffic. A gateway supports a certain size / flow, if we have an express route direct we have 100gpbs but we won’t have the full 100gbps to that virtual network.
 
 A Fast Path will allow us to give us the full extend of that bandwidth. 
-
 
 Are you still with me? I will slowly update this Day 4 journey with more screenshot which will hopefully make more sense to everyone including myself. I will be doing a part 2 which goes indepth how we can set it up step by step if you were to create a new ExpressRoute from scratch in any organisation.
