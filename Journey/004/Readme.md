@@ -24,14 +24,13 @@ Lets understand a few things before we dive deep into ExpressRoute:
 - It is a private network that does not send data or communicate through the internet.
 
 **ExpressRoute Direct**
-Ports in Microsoft Edge, different service provider have ports and split each other to customers.
-
-Microsoft Routers and ports and they are 10 gbps. Express Route Direct allow customer to purchase a port to allow us to communicate with MS Backbone without the need of going through a service provider.
+- Ports in Microsoft Edge, different service provider have ports and split each other to customers.
+- Express Route Direct allow customer to purchase a port to allow us to communicate with MS Backbone without the need of going through a service provider.
 
 **Active-Active Connection**
-Resiliency, we get two connections. If there is a 1gbps circuit, we actually get 2 x 1 gbps circuits.
-
-Actual bandwidth, there is 2 gbps due to the active-active nature of the express route. This will provide us resiliency / SLA. Basically we have 2 ethernet physical connection over the circuit. 
+- Resiliency, we get two connections. If there is a 1gbps circuit, we actually get 2 x 1 gbps circuits.
+- There is 2 gbps due to the active-active nature of the express route.
+- This will provide us resiliency / SLA. Basically we have 2 ethernet physical connection over the circuit. 
 
 ## Connectivity Options
 
