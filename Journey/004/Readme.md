@@ -36,13 +36,13 @@ Lets understand a few things before we dive deep into ExpressRoute:
 
 Now that you understand some background information, lets go through the 3 types of connectivity options:
 
-**Point-To-Point Ethernet Network**
+1) **Point-To-Point Ethernet Network**
 - Service provider is going to drop a line to my on-premise door. It is a single line that support two virtual ethernet over it and have one physical connection. This will connect our network using a physical level from on-premises to the MS Backbone
 
-**Any-To-Any VPN Network**
+2) **Any-To-Any VPN Network**
 - Multiple data centres connecting to MPLS. Microsoft Enterprise Edge becomes a node of that MPLS and connect to any-to-any nodes. 
 
-**Virtual Cross-Connection via Service Provider at a Colocation Facility (Meet Me/ Peering Location)**
+3) **Virtual Cross-Connection via Service Provider at a Colocation Facility (Meet Me/ Peering Location)**
 
 ## Setting Up The Express Route Circuit
 
@@ -54,15 +54,15 @@ Now that you understand some background information, lets go through the 3 types
 - Local SKU - Only communicate to the region that is **LOCAL** to the Meet Me. 
 
 **LOCAL SKU**
-Microsoft would have a meet me close to any corresponding regions data centre. If there is a local express route - establishing that connection. The boundary of that LOCAL can access is the region that is align to the Meet Me location.
+- Microsoft would have a meet me close to any corresponding regions data centre. If there is a local express route - establishing that connection. The boundary of that LOCAL can access is the region that is align to the Meet Me location.
 
 **Billing**
-Ingres and egress is part of the bill that will happen at the end of the month. 
+- Ingres and egress is part of the bill that will happen at the end of the month. 
 
 ![Screenshot](https://learn.microsoft.com/en-us/azure/expressroute/media/expressroute-howto-circuit-portal-resource-manager/expressroute-circuit-overview.png)
 
 **Service Key**
-A Express Route circuit is defined by a service key and it gives us a service key which will be shared to our service provider. 
+- A Express Route circuit is defined by a service key and it gives us a service key which will be shared to our service provider. 
 
 ### Express Route Peering Types
 
@@ -71,13 +71,14 @@ A Express Route circuit is defined by a service key and it gives us a service ke
 The screenshot above is from the MS Doc [here](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction)
 
 There are 2 types of peering:
-**Microsoft Peering:**
+
+- **Microsoft Peering:**
 
 All those PaaS and SaaS service that don’t live in a virtual network and are in a public IP space. They aren’t living within a virtual network.  
 
 You cannot turn off O365 even with Microsoft Peering as it is designed to work over the internet. You will need to work with the Office team to get authorisation to work off the internet.  
   
-**Private Peering:**
+- **Private Peering:**
 
 Everything that can live in a virtual network and in a private IP space. 
 
