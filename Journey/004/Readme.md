@@ -129,4 +129,6 @@ This allows us to bypass the gateway for the traffic. A gateway supports a certa
 
 A Fast Path will allow us to give us the full extend of that bandwidth. 
 
+<br>
+<br>
 Are you still with me? I will slowly update this Day 4 journey with more screenshot which will hopefully make more sense to everyone including myself. I will be doing a part 2 which goes indepth how we can set it up step by step if you were to create a new ExpressRoute from scratch in any organisation.
