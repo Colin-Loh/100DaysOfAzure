@@ -4,11 +4,25 @@
 
 In every large organisation, the most common networking compontent that they do use is ExpressRoute. Its Day 4 and I want to explore ExpressRoute indepth and identify what is it and how do we actually use it! 
 
-ExpressRoute allows organisation to extend its on-premises network into the Microsoft Cloud over private connection with the help of a service provider / partner or connectivity provider. 
+ExpressRoute allows organisation to extend its on-premises network into the Microsoft Cloud over private connection with the help of a service provider. 
 
-## Prerequisite
+## Background
 
-✍️ (What) Explain in one or two sentences the base knowledge a reader would need before describing the the details of the cloud service or topic.
+Lets understand a few things before we dive deep into ExpressRoute:
+
+*The MS Backbone*
+- Private network that interconnects Microsoft's data centers worldwide and provides the underlying connectivity for various Microsoft services, including Azure, Microsoft 365, and other cloud-based offerings.
+
+Throughout the world there are edge nodes like Azure FrontDoor and the point of these edge nodes they bring computing resources closer to the users or device. 
+
+Each edge site is a physical location where multiple edge nodes / servers distributed across different geographic locations.   
+  
+Each edge site, we will be connecting to different carriers such as Optus / Vodafone. The idea is as a customer, we get a service from a service provider. We would only be one hop away to a direct connection to Microsoft.  
+  
+Edge site, connect on-premises to the internet through the carriers.   
+  
+
+
 
 ## Use Case
 
