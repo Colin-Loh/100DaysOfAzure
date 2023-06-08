@@ -1,11 +1,10 @@
-**Add a cover photo like:**
-![placeholder image](https://via.placeholder.com/1200x600)
-
-# New post title here
+# Express Route - Part 1
 
 ## Introduction
 
-✍️ (Why) Explain in one or two sentences why you choose to do this project or cloud topic for your day's study.
+In every large organisation, the most common networking compontent that they do use is ExpressRoute. Its Day 4 and I want to explore ExpressRoute indepth and identify what is it and how do we actually use it! 
+
+ExpressRoute allows organisation to extend its on-premises network into the Microsoft Cloud over private connection with the help of a service provider / partner or connectivity provider. 
 
 ## Prerequisite
 
@@ -27,7 +26,7 @@
 
 ### Step 1 — Summary of Step
 
-![Screenshot](https://via.placeholder.com/500x300)
+![Screenshot](https://learn.microsoft.com/en-us/azure/expressroute/media/expressroute-introduction/expressroute-connection-overview.png)
 
 ### Step 1 — Summary of Step
 
