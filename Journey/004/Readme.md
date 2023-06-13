@@ -54,10 +54,20 @@ Now that you understand some background information, lets go through the 3 types
 - Local SKU - Only communicate to the region that is **LOCAL** to the Meet Me. 
 
 **LOCAL SKU**
-- Microsoft would have a meet me close to any corresponding regions data centre. If there is a local express route - establishing that connection. The boundary of that LOCAL can access is the region that is align to the Meet Me location.
+- Local to one geographical location. Give you access to one or two region. If you say Australia East and if you ask an express route to Australia East, connection will only go to that region (data center and MSE) 
+- It is not metered, you can transfer as much data and is covered by the monthly payment of the express route.
 
-**Billing**
-- Ingres and egress is part of the bill that will happen at the end of the month. 
+**Express Route Standard**
+- Geopolitical area all region to North America or Australia.
+- This one is metered and get charge on data coming out of Azure to the on-prem location.
+
+**Express Route Premium**
+- Give access to all region, globally. 
+- This one is metered and get charge on data coming out of Azure to the on-prem location.
+
+**Express Route Direct***
+- Direct connection to Azure 10GBps or 100GBps option and encryption is automatically provision as its a private connection.
+- Most expensive one as its a physical cable that is directly connected to MS Backbone
 
 ![Screenshot](https://learn.microsoft.com/en-us/azure/expressroute/media/expressroute-howto-circuit-portal-resource-manager/expressroute-circuit-overview.png)
 
